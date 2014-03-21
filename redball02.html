@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>Red Ball Part 2</title>
+<script src="http://lrn.icstars.org/redball.js"></script>
+<script>
+function sayhello()
+{
+alert("hello Kimberly Swift");
+}
+
+function moveleft()
+{
+	redball.left =  redball.left - 5;
+}
+
+function moveright()
+{
+	redball.left = redball.left + 5;
+}
+			
+function moveup()
+{
+	redball.top = redball.top - 5; 
+}
+function movesquare()
+{
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.left = redball.left + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.top = redball.top + 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.left =  redball.left - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+redball.top = redball.top - 5;
+
+}
+			
+
+function movedown()
+{
+	redball.top = redball.top + 5;
+}
+
+function moveup10()
+{
+	for(var i=1;i<=10;i++)
+	{
+		moveup();
+	}
+}
+function moveupright()
+{
+moveup();
+moveright();
+}
+function movediamond()
+{
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+moveupright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownright();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft();
+movedownleft()
+}
+function movedownright()
+{
+movedown();
+moveright();
+}
+function movedownleft()
+{
+movedown();
+moveleft();
+}
+</script>
+</head>
+<body>
+<button onclick="sayhello();">hello world</button>
+<button onclick="moveleft();">move left</button>
+<button onclick="moveright();">move right</button>
+<button onclick="moveup();">move up</button>
+<button onclick="movedown();">move down</button>
+<button onclick="movesquare();">move square</button>
+<button onclick="moveup10();">move up 10</button>
+<button onclick="movediamond();">move diamond</button>
+<img src="redball.jpg"width=100px id="redball"/>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#redball
+{
+	position:absolute;
+	left:200px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+function Ball (cssid)
+{
+<!Move Ball Right Below---->
+	this.moveright=function()
+	{
+	var pos=$(cssid).offset();
+	console.log("left "+pos.left);
+	console.log("top "+pos.top);
+	pos.left=pos.left+20
+	$(cssid).offset(pos);
+	
+	<----Move Ball Left Below------>
+		this.moveleft=function()
+		{
+		var pos=$(cssid).offset();
+		console.log("left "+pos.left);
+		console.log("top "+pos.top);
+		pos.left=pos.left-20
+		$(cssid).offset(pos);
+		
+		<!------Move Ball Down Below----->
